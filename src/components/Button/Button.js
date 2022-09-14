@@ -9,11 +9,12 @@ const Button = ({
   hendlerClik,
   positionText,
   leftPadding,
+  type,
 }) => {
   const showPosts = useSelector((store) => store.showPosts.showPosts);
   return (
     <button
-      type="button"
+      type={type}
       style={{
         backgroundColor: bgColor,
         textAlign: positionText,
@@ -32,12 +33,14 @@ Button.propTypes = {
   textBtn: PropTypes.node,
   hendlerClik: PropTypes.func,
   positionText: PropTypes.string,
+  type: PropTypes.string,
 };
 
 Button.defaultProps = {
   bgColor: "",
   positionText: "",
   textBtn: "",
+  type: "button",
   hendlerClikOpenModal: () => {},
 };
 

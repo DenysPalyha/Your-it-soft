@@ -7,13 +7,8 @@ import styles from "./Header.module.scss";
 
 function Header() {
   const [valueInput, setValueInput] = useState("");
-  const [isInputShow, setIsInputShow] = useState(false);
 
   const dispatch = useDispatch();
-
-  const toggleInputSearch = () => {
-    setIsInputShow((current) => !current);
-  };
 
   return (
     <header>
@@ -22,16 +17,7 @@ function Header() {
           <button className={styles.headerLogoLink}>Your it soft</button>
         </div>
         <div className={styles.containerSearch}>
-          <div className={styles.btnWrapper}>
-            <Button
-              bgColor="#333348"
-              textBtn="Search"
-              hendlerClik={toggleInputSearch}
-              positionText="left"
-              leftPadding="35px"
-            />
-          </div>
-          {isInputShow && (
+          <form className={styles.formWrapper}>
             <input
               className={styles.headerInput}
               type="text"
@@ -40,10 +26,24 @@ function Header() {
               value={valueInput}
               onChange={(event) => {
                 setValueInput(event.target.value);
-                dispatch(filterUsersAC(event.target.value));
+              }}
+              onBlur={() => {
+                if (valueInput === "") {
+                  dispatch(filterUsersAC(valueInput));
+                }
               }}
             />
-          )}
+            <Button
+              bgColor="#333348"
+              textBtn="Search name"
+              hendlerClik={(event) => {
+                event.preventDefault();
+                dispatch(filterUsersAC(valueInput));
+              }}
+              positionText="left"
+              leftPadding="35px"
+            />
+          </form>
         </div>
       </div>
     </header>

@@ -57,21 +57,31 @@
   }
 }
 
-.btnWrapper {
+.formWrapper {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
   @media (min-width: 481px) and (max-width: 992.5px) {
     margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   @media (min-width: 993px) {
     margin: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .containerSearch {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 
   @media (min-width: 481px) and (max-width: 992.5px) {
     flex-direction: row-reverse;
