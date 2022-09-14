@@ -1,0 +1,5 @@
+export const GET_USERS = "GET_USERS";
+export const SHOW_NEXT_USERS = "SHOW_NEXT_USERS";
+export const SHOW_PREV_USERS = "SHOW_PREV_USERS";
+export const FILTER_USERS_NAME = "FILTER_USERS_NAME";
+export const IS_LOADING_USERS = "IS_LOADING_USERS";

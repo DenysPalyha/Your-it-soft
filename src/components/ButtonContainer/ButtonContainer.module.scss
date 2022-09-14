@@ -1,0 +1,67 @@
+.container {
+  min-width: 321px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    max-width: 768px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 993px) {
+    max-width: 1240px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.btnPrevious {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+.previousIcon {
+  margin-right: 20px;
+}
+
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 20px 0 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #eeeeee;
+}
+
+.nextIcon {
+  margin-left: 20px;
+}

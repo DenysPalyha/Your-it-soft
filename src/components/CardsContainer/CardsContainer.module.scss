@@ -1,0 +1,104 @@
+.container {
+  max-width: 321px;
+  margin: 30px auto 0;
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    max-width: 768px;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 993px) {
+    max-width: 1240px;
+    margin: 35px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.listItem {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    margin: 0 30px 30px 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 993px) {
+    margin: 0 30px 30px 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.listItemActive {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 993px) and (max-width: 1140px) {
+    margin: 0 0 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 1141px) {
+    margin: 0 30px 30px 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}

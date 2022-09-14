@@ -1,0 +1,154 @@
+.container {
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: #333348;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    width: 320px;
+    height: 320px;
+    border-radius: 40px;
+    background: #333348;
+  }
+
+  @media (min-width: 993px) {
+    width: 420px;
+    height: 370px;
+    border-radius: 40px;
+    background: #333348;
+  }
+}
+
+.activeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 270px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background: #333348;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    width: 270px;
+    height: 265px;
+    border-radius: 40px;
+    background: #333348;
+  }
+
+  @media (min-width: 993px) {
+    width: 270px;
+    height: 265px;
+    border-radius: 40px;
+    background: #333348;
+  }
+}
+
+.activeText {
+  margin: 0 0 10px;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #eeeeee;
+}
+
+.activeTextLink {
+  margin: 0 0 30px;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #eeeeee;
+}
+
+.name {
+  margin: 0 0 10px;
+  padding: 0;
+
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+
+  color: #eeeeee;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    font-family: "Sora";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 16px;
+  }
+  @media (min-width: 993px) {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.email {
+  margin: 0 0 10px;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #eeeeee;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    font-family: "Sora";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 16px;
+  }
+  @media (min-width: 993px) {
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.number {
+  margin: 0 0 20px;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #eeeeee;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    margin: 0 0 25px;
+    font-family: "Sora";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 16px;
+  }
+  @media (min-width: 993px) {
+    margin: 0 0 30px;
+    font-family: "Sora";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.btnWrapper {
+  @media (min-width: 481px) and (max-width: 992.5px) {
+  }
+  @media (min-width: 993px) {
+  }
+}

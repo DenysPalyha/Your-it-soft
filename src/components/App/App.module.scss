@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #1f1f2f;
+}
+
+.containerApp {
+  padding: 0 15px;
+  min-width: 321px;
+
+  @media (min-width: 481px) and (max-width: 992.5px) {
+    min-width: 768px;
+  }
+
+  @media (min-width: 993px) {
+    width: 100%;
+  }
+}
