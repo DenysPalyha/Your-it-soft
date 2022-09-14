@@ -40,8 +40,7 @@ function Header() {
                 event.preventDefault();
                 dispatch(filterUsersAC(valueInput));
               }}
-              positionText="left"
-              leftPadding="35px"
+              positionText="center"
             />
           </form>
         </div>
