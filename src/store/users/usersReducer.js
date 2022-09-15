@@ -64,7 +64,9 @@ const usersReducer = (state = initialState, action) => {
         draftState.filter = action.payload;
 
         draftState.currentUser = state.users.filter((user) => {
-          return user.name.toLowerCase().includes(draftState.filter);
+          return user.name
+            .toLowerCase()
+            .includes(draftState.filter.toLowerCase());
         });
 
         if (draftState.filter === "") {
