@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     dispatch(getUsersAC());
-  }, [dispatch]);
+  }, []);
 
   return (
     <div className={styles.containerApp}>

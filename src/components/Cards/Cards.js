@@ -1,10 +1,12 @@
 import React from "react";
-import Button from "../Button";
-import styles from "./Cards.module.scss";
 import { useDispatch, useSelector } from "react-redux";
+import PropTypes from "prop-types";
+
+import Button from "../Button";
+
 import { showPostsContainer } from "../../store/postsContainer/actionCreators";
 import { getPostsAC } from "../../store/posts/actionCreaters";
-import PropTypes from "prop-types";
+import styles from "./Cards.module.scss";
 
 function Cards({ id, name, email, phone }) {
   const showPosts = useSelector((store) => store.showPosts.showPosts);

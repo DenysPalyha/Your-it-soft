@@ -14,7 +14,9 @@ function Header() {
     <header>
       <div className={styles.container}>
         <div className={styles.headerLogo}>
-          <button className={styles.headerLogoLink}>Your it soft</button>
+          <a href="#" className={styles.headerLogoLink}>
+            Your it soft
+          </a>
         </div>
         <div className={styles.containerSearch}>
           <form className={styles.formWrapper}>
