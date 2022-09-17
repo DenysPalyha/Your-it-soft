@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Your-it-soft/static/css/main.44f1954f.css",
-    "main.js": "/Your-it-soft/static/js/main.e252d5db.js",
+    "main.js": "/Your-it-soft/static/js/main.4461b4eb.js",
     "index.html": "/Your-it-soft/index.html",
     "static/media/previous.svg": "/Your-it-soft/static/media/previous.43eacf0c9333b5d49fe3765e1e0b9f11.svg",
     "static/media/next.svg": "/Your-it-soft/static/media/next.dcd6163bd964bd1bb10ffa0f6b797cda.svg",
     "main.44f1954f.css.map": "/Your-it-soft/static/css/main.44f1954f.css.map",
-    "main.e252d5db.js.map": "/Your-it-soft/static/js/main.e252d5db.js.map"
+    "main.4461b4eb.js.map": "/Your-it-soft/static/js/main.4461b4eb.js.map"
   },
   "entrypoints": [
     "static/css/main.44f1954f.css",
-    "static/js/main.e252d5db.js"
+    "static/js/main.4461b4eb.js"
   ]
 }
