@@ -23,7 +23,7 @@ function Header() {
             <input
               className={styles.headerInput}
               type="text"
-              name="valueInput"
+              name="name"
               placeholder="Search name"
               value={valueInput}
               onChange={(event) => {
@@ -38,6 +38,7 @@ function Header() {
             <Button
               bgColor="#333348"
               textBtn="Search name"
+              type="submit"
               hendlerClik={(event) => {
                 event.preventDefault();
                 dispatch(filterUsersAC(valueInput));
